@@ -38,3 +38,9 @@ class SubSystemCreateUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = SubSystemModel
         exclude = ('is_active', 'modules',)
+
+
+class ModuleCreateUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ModuleModel
+        exclude = ('is_active', 'bugs',)
